@@ -1,0 +1,28 @@
+name: publish.yml
+
+on :
+  release:
+    types:
+      - published
+
+jobs:
+  publish :
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install -g hexo-cli
+      - run: hexo generate
+      - name : scp
+        uses: appleboy/scp-action@v0.1.7
+        with:
+           host: ${{ secrets.HOST }}
+           username: ${{ secrets.USERNAME }}
+           password: ${{ secrets.PASSWORD }}
+           port: ${{ secrets.PORT }}
+           source: "public/*"
+           target: "/var/www/blog"
+           strip_components: 1
+
