@@ -1,0 +1,95 @@
+body{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color : white;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black ;
+}
+
+header{
+    a{
+        text-align: center ;
+        font-size: 3em;
+    }
+    padding: 25px  ;
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    justify-content :center;
+    align-items: center;
+    background-color: blue ;
+    a {
+        color: black ;
+        text-align: center;
+        text-decoration: none;
+        background-color: yellow;
+        padding: 10px;
+        font-style: normal;
+    }
+}
+
+.index{
+
+
+
+    h1 {
+        padding: 5px;
+        text-align: center;
+    }
+    a{
+        font-style: normal;
+        h2{ text-align: center }
+        .date{
+            text-align: center ;
+        }
+        .content { text-align: justify }
+    }
+    a:hover {
+        opacity: 0.3 ;
+    }
+
+}
+
+.post {
+
+
+    width: 90% ;
+    .title {
+        text-align: center;
+
+        h1{
+            margin: auto ;
+
+            font-size: 2em;
+        }
+        .date{
+            font-weight : 400 ;
+
+
+        }
+    }
+    .content {
+        margin: auto ;
+        width: 100% ;
+        text-align: justify ;
+    }
+
+}
+
+
+
+
+
+
+

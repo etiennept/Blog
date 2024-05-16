@@ -1,0 +1,11 @@
+
+<section class = "index" >
+    <h1 > Dernière Publication </h1>
+     <% page.posts.map( (item) =>{ %>
+                <a class="post" href="<%= item.path %>">
+                    <h2 class="title"> <%= item.title %> </h2>
+                    <p class="date"> <%= item.updated.format('LL')%> </p>
+                    <p class="content" > <%= item.resume %> </p>
+                </a>
+        <% }) %>
+</section>
