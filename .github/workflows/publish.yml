@@ -1,6 +1,5 @@
 name: publish.yml
 
-
 on :
   push:
     branches:
@@ -24,6 +23,7 @@ jobs:
            username: ${{ secrets.USERNAME }}
            password: ${{ secrets.PASSWORD }}
            port: ${{ secrets.PORT }}
+           key: ${{ secrets.KEY }}
            source: "public/*"
            target: "/var/www/blog"
            strip_components: 1
