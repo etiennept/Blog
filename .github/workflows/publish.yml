@@ -13,8 +13,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - run: install -g hexo-cli
       - run: npm install
-      - run: hexo generate
+      - run: npm run build
       - name : scp
         uses: appleboy/scp-action@v0.1.7
         with:
