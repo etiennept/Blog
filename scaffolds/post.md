@@ -1,6 +1,4 @@
 ---
 title: {{ title }}
-date: {{ date }}
-tags:
+resume : {{}}
 ---
-helloe 
