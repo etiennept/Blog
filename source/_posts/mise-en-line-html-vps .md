@@ -3,12 +3,14 @@ title: Mise en ligne  ficher html sur un vps linux
 resume:  Comment mettre en line un fichier html sur un vps linux. Description étape part étape  
 ---
 
+
 La mise en ligne d'un ficher html sur un vps linux parait compliqué mais cela est simple. 
   
 On commence par se connecter au serveur via le ssh.
 Puis sur le serveur on installe [nginx]( https://nginx.org/en/ ) si on ne l'a déja fait. 
 
 Ensuite on ouvre sur le terminal le ficher suivant : /etc/nginx/sites-avaibles/nginx.conf.
+
 
 ```  
    server{
