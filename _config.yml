@@ -104,15 +104,3 @@ theme: blog-theme
 deploy:
   type: ''
 
-sitemap:
-  path:
-    - sitemap.xml
-    - sitemap.txt
-  template: ./sitemap_template.xml
-  template_txt: ./sitemap_template.txt
-  rel: false
-  tags: true
-  categories: true
-  site_url: http://monblogtech.com
-  gzip: true,
-  max_urls_per_sitemap: 50000
