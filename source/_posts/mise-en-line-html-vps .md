@@ -11,6 +11,8 @@ Puis sur le serveur on installe [nginx]( https://nginx.org/en/ ) si on ne l'a d√
 Ensuite on ouvre sur le terminal le ficher suivant : /etc/nginx/sites-avaibles/nginx.conf  
 
 
+
+
 ``` 
    server{
    ...
