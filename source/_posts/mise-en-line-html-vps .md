@@ -44,6 +44,7 @@ Puis on lance cette comande sur l'ordinateur.
 ```shell 
     scp file_name  username@vps_host:/var/www/dir_name 
 ```
+
 ou 
 - file_name : le nom du fichier    
 - username : l
